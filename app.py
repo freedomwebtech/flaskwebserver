@@ -9,16 +9,16 @@ GPIO.output(pins, GPIO.LOW)
 GPIO.setwarnings(False)
 @app.route('/')
 def index():
-    return render_template('on.html')
+    return render_template('index.html')
 
 @app.route('/on')
 def on():
    GPIO.output(pins,GPIO.HIGH)
-   return render_template('on.html')
+   return render_template('index.html')
 @app.route('/off')
 def off():
    GPIO.output(pins,GPIO.LOW)
-   return render_template('on.html')
+   return render_template('index.html')
 
 
 
