@@ -24,4 +24,4 @@ def off():
 
 
 if __name__ == "__main__":
-   app.run(host='192.168.0.104', port=80, debug=True)
+   app.run(host='192.168.0.104', port=8081, debug=True)
